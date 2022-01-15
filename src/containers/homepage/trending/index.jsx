@@ -18,31 +18,38 @@ import {
     Link
 } from "react-router-dom";
 import AssetPath from '../../../helpers/AssetHelper'
-import CollectionComponent from '../../../components/collection'
+import TrendingCard from '../../../components/trendingCard';
 
-const Collection = () => {
+const Tranding = () => {
     return (
         <>
             <div className="section mt-100">
                 <div className="container">
                     <div className="section__head">
-                        <div className="d-flex justify-content-between align-items-center">
-                            <h2 className="section__title"> Collections</h2>
-                            <a href="Collections.html" className="btn btn-dark btn-sm">
-                                View
-                                All</a>
+                        <div className="d-flex justify-content-center align-items-center">
+                            <h2 className="section__title"> Trending in</h2>
+                            <div className="dropdown">
+                                <Link className="section__title dropdown-toggle" to="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    &nbsp; all categories
+                                </Link>
+                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a className="dropdown-item" href="#">Action</a></li>
+                                    <li><a className="dropdown-item" href="#">Another action</a></li>
+                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="row justify-content-center mb-30_reset">
+                    <div className="row justify-content-center d-flex">
                         <div className="col-lg-4 col-md-6 col-sm-8">
-                            <CollectionComponent />
+                            <TrendingCard />
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-8">
-                            <CollectionComponent />
+                            <TrendingCard />
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-8">
-                            <CollectionComponent />
+                            <TrendingCard />
                         </div>
                     </div>
                 </div>
@@ -81,4 +88,4 @@ const Collection = () => {
     )
 }
 
-export default Collection
+export default Tranding

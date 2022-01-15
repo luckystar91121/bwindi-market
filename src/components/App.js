@@ -18,7 +18,6 @@ import {
   Routes,
   Link
 } from "react-router-dom";
-import logo from '../logo.png';
 import './App.css';
 import '../assets/css/plugins/remixicon.css'
 import '../assets/css/plugins/bootstrap.min.css'

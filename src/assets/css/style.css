@@ -10675,7 +10675,7 @@ body {
   font-size: 17px;
   letter-spacing: 0.3px;
   color: #183b56;
-  background: #ecf1f9;
+  background: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -10688,14 +10688,14 @@ body.is__dark {
   background: #0b1b27;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .container,
   .container-lg,
   .container-md,
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1400px;
+    max-width: 1200px;
   }
 }
 
@@ -13475,7 +13475,7 @@ label:active:after {
   background: #ffffff;
   border: solid 1px #e2eef1;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 10px;
   -webkit-box-shadow: 0px 17px 13px 0px #192c4b05;
           box-shadow: 0px 17px 13px 0px #192c4b05;
   margin: auto;
@@ -13484,6 +13484,10 @@ label:active:after {
   overflow: hidden;
   -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card__item.fluid {
+  padding: 0px;
 }
 
 .card__item.has_style2 {
@@ -13548,8 +13552,12 @@ label:active:after {
   display: block ruby;
 }
 
+.card__item .card_title.pauid-top{
+  padding-top: 20px
+}
+
 .card__item .card_head {
-  border-radius: 20px;
+  border-radius: 10px 10px 0px 0px;
   background-color: #ecf1f9;
   height: 22rem;
   overflow: hidden;
@@ -13590,6 +13598,10 @@ label:active:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.card__item .card_footer.pauid{
+  padding:20px;
 }
 
 .card__item.one .card_head, .card__item.six .card_head {
@@ -14313,6 +14325,7 @@ label:active:after {
 
 .header__1 .header__logo img {
   height: 2.2rem;
+  margin-left: 20px;
 }
 
 .header__1 .is_new {
@@ -14420,7 +14433,7 @@ label:active:after {
 .header__1 .header__search {
   background: #e2eef1;
   height: 3rem;
-  width: 20rem;
+  width: 30rem;
   border-radius: 10px;
   position: relative;
   -webkit-transition: all 0.2s ease-in-out;
@@ -14807,11 +14820,11 @@ label:active:after {
   content: "";
   position: absolute;
   left: 0;
-  background: url(../img/effects/hero.jpg);
-  width: 476px;
+  background: url(../img/effects/home_bg.png);
+  width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   z-index: -1;
 }
 
@@ -15624,7 +15637,7 @@ label:active:after {
 }
 
 .section__title {
-  font-size: 34px;
+  font-size: 28px;
 }
 
 @media screen and (max-width: 991px) {

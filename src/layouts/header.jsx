@@ -24,44 +24,45 @@ const Header = (props) => {
 
     return (
         <header className="header__1 js-header" id="header">
-            <div className="container">
+            <div className="container-fluid">
                 <div className="wrapper js-header-wrapper">
                     <div className="header__logo">
                         <Link to="/">
                             <img
                                 className="header__logo"
                                 id="logo_js"
-                                src={`${AssetPath('img/avatars/dragon3.png')}`}
+                                src={`${AssetPath('img/logos/logo_bwindi.svg')}`}
                                 alt="logo"
                             />
                         </Link>
                     </div>
-
-                    <div className="header__menu">
-                        <ul className="d-flex space-x-30">
-                            <li>
-                                <Link className="color_black" to="presale"> Presale</Link>
-                            </li>
-                            <li>
-                                <Link className="color_black" to="marketplace"> Marketplace</Link>
-                            </li>
-                            <li>
-                                <Link className="color_black" to="profile"> Profile</Link>
-                            </li>
-                            <li>
-                                <Link className="color_black" to="creators"> Creators</Link>
-                            </li>
-                        </ul>
-                    </div>
-
                     <div className="header__search">
                         <input type="text" placeholder="Search" />
                         <button className="header__result">
                             <i className="ri-search-line"></i>
                         </button>
                     </div>
-                    <div className="header__btns">
-                        <ConnectWalletButton />
+
+                    <div className="header__menu">
+                        <ul className="d-flex space-x-30">
+                            <li>
+                                <Link className="color_black" to="marketplace"> Marketplace</Link>
+                            </li>
+                            <li>
+                                <Link className="color_black" to="browse"> Browse</Link>
+                            </li>
+                            
+                            <li>
+                                <Link className="color_black" to="discover"> Discover</Link>
+                            </li>
+                            <li>
+                                <Link className="color_black" to="create"> Create</Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="space-x-20 d-flex flex-column flex-md-row sm:space-y-20">
+                        <a className="btn btn-white" href="Marketplace.html">Login</a>
+                        <a className="btn btn-primary" href="Upload-type.html">SignUp</a>
                     </div>
                     <div className="header__burger js-header-burger"></div>
 
@@ -69,9 +70,9 @@ const Header = (props) => {
                         <div className="header__mobile__menu space-y-40">
                             <ul className="d-flex space-y-20">
                                 <li> <Link className="color_black" to="Marketplace.html"> Marketplace</Link> </li>
-                                <li> <Link className="color_black" to="Collections.html"> Collections</Link> </li>
-                                <li> <Link className="color_black" to="Profile.html"> Profile</Link> </li>
-                                <li> <Link className="color_black" to="Creators.html"> Creators</Link> </li>
+                                <li> <Link className="color_black" to="Collections.html"> Browse</Link> </li>
+                                <li> <Link className="color_black" to="Profile.html"> Discover</Link> </li>
+                                <li> <Link className="color_black" to="Creators.html"> Create</Link> </li>
 
                             </ul>
                             <div className="space-y-20">

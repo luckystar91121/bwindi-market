@@ -18,6 +18,9 @@ import {
     Link
 } from "react-router-dom";
 
+import AssetPath from '../../../helpers/AssetHelper.js'
+import SimpleCard from '../../../components/simpleCard'
+
 const Welcome = () => {
     return (
         <>
@@ -28,28 +31,26 @@ const Welcome = () => {
                             <div className="col-lg-6">
                                 <div className="hero__left space-y-20">
                                     <h1 className="hero__title">
-                                        Discover digital art
-                                        and collect NFTs
+                                        Discover, collet, and <br />
+                                        sell extraordinary <br />
+                                        NFTs
                                     </h1>
-                                    <p className="hero__text txt">WhiteDragon is a shared liquidity
-                                        NFT
-                                        market smart contract
-                                        which
-                                        is used by multiple websites to provide the users the
-                                        best
-                                        possible experience.</p>
+                                    <p className="hero__text txt">
+                                        on the world's first & <br />
+                                        largest NFT marketplace
+                                    </p>
                                     <div className="space-x-20 d-flex flex-column flex-md-row
 										sm:space-y-20">
-                                        <a className="btn btn-primary" href="Marketplace.html">View
-                                            market</a>
-                                        <a className="btn btn-white" href="Upload-type.html">
-                                            Upload your item</a>
+                                        <a className="btn btn-primary" href="Marketplace.html">Explore</a>
+                                        <a className="btn btn-white" href="Upload-type.html">Create</a>
+                                    </div>
+                                    <div className="">
+                                        <a className="d-flex align-items-center" href="#"><i className="ri-play-circle-fill"></i>&nbsp;Learn more about open sea</a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-6">
-                                <img className="img-fluid w-full" id="img_js"
-                                    alt="" />
+                                <SimpleCard />
                             </div>
                         </div>
 
