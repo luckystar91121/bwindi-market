@@ -20,38 +20,37 @@ import {
 
 import AssetPath from '../../helpers/AssetHelper.js'
 
-const NFTCard = () => {
+const TrendingCard = () => {
     return (
-        <div className="card__item four fluid">
-            <div className="card_body space-y-10">
-                <div className="card_head">
+        <div className="creator_item creator_card space-y-10">
+            <div className="avatars flex-column space-y-10">
+                <div className="cover">
                     <Link to="Item-details.html">
                         <img
-                            src={`${AssetPath("img/nfts/1.jpg")}`}
+                            src={`${AssetPath("img/nfts/2.jpg")}`}
                             alt="item img" />
                     </Link>
                 </div>
-
+                <div className="media">
+                    <Link to="Profile.html">
+                        <img
+                            className='avatar avatar-md'
+                            src={`${AssetPath("img/avatars/dragon1.png")}`}
+                            alt="item img" />
+                    </Link>
+                </div>
                 <h6 className="card_title pauid-top text-center">
                     <Link className="color_black"
                         to="Item-details.html">
-                        Art in Motion
+                        EulerBeats Enigma
                     </Link>
+                    <p className='txt_xs'>by &nbsp;<Link to="#"> Coldie </Link></p>
                 </h6>
                 <div className="card_footer pauid d-block space-y-10">
                     <div className="card_footer justify-content-center">
                         <div className="creators">
-                            <p className="txt_sm text-center">A shrouded entity existing in the approximate future</p>
+                            <p className="txt_xs text-center">A shrouded entity existing in the approximate future</p>
                         </div>
-                    </div>
-                    <div className="d-flex
-                        align-items-center
-                        space-x-10
-                        justify-content-center">
-                        <Link className="btn btn-sm btn-white" to="#"
-                            data-toggle="modal"
-                            data-target="#popup_bid">Live
-                        </Link>
                     </div>
                 </div>
             </div>
@@ -59,4 +58,4 @@ const NFTCard = () => {
     )
 }
 
-export default NFTCard
+export default TrendingCard

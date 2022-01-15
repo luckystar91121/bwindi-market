@@ -11,7 +11,6 @@
     * - Modification    : 
 **/
 import React, { Component } from 'react';
-import logo from '../logo.png';
 import DarkBackground from '../assets/img/bg/in_hero1_dark.png'
 import Logo from '../assets/img/logos/Logo.svg'
 import MetamaskLogo from '../assets/img/icons/metamask.svg'

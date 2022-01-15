@@ -23,20 +23,21 @@ import {
 import Header from './header'
 import Footer from './footer'
 import Welcome from '../containers/homepage/welcome'
-import Explore from '../containers/homepage/explore'
-import Collection from '../containers/homepage/collection'
+import Notable from '../containers/homepage/notable'
+import Trending from '../containers/homepage/trending'
 import Community from '../containers/homepage/community'
 
 const Layout = (props, {children}) => {
     return (
-        <div className="body is__dark">
+        <div className="body">
             <Header />
             <Welcome />
-            <Explore />
-            <Collection />
+            <Notable />
+            <Trending />
+            <CreateSell />
             <Community />
             <Footer />
-        </div >
+        </div>
     );
 }
 
